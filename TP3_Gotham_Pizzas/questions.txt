@@ -1,1 +1,27 @@
-// RÃ©diger les rÃ©ponses pour le TP3
+// Réponses du TP 1
+
+Question 1
+
+-On peut faire hériter Client de Personne car une Personne peut avoir plusieurs 
+compte bancaires associés à son domicile (un ami paie pour cette personne par exemple)
+et supprimer totalement le lien entre Personne et Collaborateur.
+-Grande et Petite Pizza diffèrent par leur taille, pas d'intérêt d'avoir 
+deux classes : ajout d'un type énuméré dans la classe pizza pour la taille de la pizza
+-La classe PointGPS n'est pas utile, ajout de trois attributs (x,y,z) à Collaborateur
+-On peut consulter l'état d'une commande mais il faudrait également pouvoir consulter 
+la fonction d'un collaborateur (préparateur, livreur ou coordinateur) et ensuite il faudrait
+pouvoir consulter l'état d'un collaborateur (préparation de pizza, en train de livrer, libre)
+
+
+Question 2
+
+Le pattern decorator permet d’ajouter dynamiquement des responsabilités à un objet existant
+et est une alternaive qui offre plus de souplesse que l’héritage. Il permettrait donc d'ajouter
+des fonctionnalités de paiements permettant d'offrir plus de possibilités quant à la gestion du 
+paiment final de l'utilisateur.
+
+Question 3
+
+Le pattern state peut permettre à notre système global d'avoir différents comportements en
+fonction de l'état de la pizza. Différentes méthodes seront appelées selon les modifications 
+de l'état de la commande par le coordinateur.
